@@ -1,0 +1,467 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        :root {
+            --left-with: 300px;
+            --color-bg: #1E1F22;
+            --color-theme-main: antiquewhite;
+            --color-text-main: #A9A9B3;
+            --color-text-secondary: #333437;
+            --color-embellish: #26282E;
+
+            --font-main: 'Noto Serif SC', serif;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 滚动条 */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--color-text-secondary);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--color-text-secondary);
+        }
+
+
+        body {
+            background-color: var(--color-bg);
+            color: var(--color-text-main);
+            font-family: var(--font-main);
+        }
+
+        body a {
+            color: var(--color-text-main);
+            text-decoration: none;
+        }
+        body a:hover{
+            color: var(--color-theme-main);
+        }
+
+        .leftArea {
+            font-size: .9rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: var(--left-with);
+            height: 100%;
+            overflow: auto;
+            background: var(--color-embellish);
+        }
+
+        .rightArea {
+            font-size: 1.1rem;
+            margin-left: var(--left-with);
+            padding: 30px;
+        }
+
+        .article-wrapper img {
+            max-width: 100%;
+        }
+
+        .folder-top-wrapper {
+            margin-top: 12px;
+        }
+
+        .folder-name {
+            font-weight: 900;
+            font-size: 1rem;
+            color: antiquewhite;
+        }
+        .article-item{
+            margin: 2px 0;
+        }
+    </style>
+    <title>3 Java面试题.md</title>
+</head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300;400;700;900&family=Roboto+Mono&display=swap"
+      rel="stylesheet">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<body>
+<main>
+    <aside class="leftArea">
+        <div style="padding: 30px">
+            <div class="article-item">
+                 <a href="/base/index.html">index.html</a>
+            </div>
+            <div class="folder-wrapper folder-top-wrapper">
+                <div class="folder-name"> 学习笔记</div>
+            <div class="article-item">
+                > <a href="/base/学习笔记/Android-Camp-2023.html">Android-Camp-2023.md</a>
+            </div>
+            <div class="article-item">
+                > <a href="/base/学习笔记/FreeMarker笔记.html">FreeMarker笔记.md</a>
+            </div>
+            <div class="article-item">
+                > <a href="/base/学习笔记/Java注解.html">Java注解.md</a>
+            </div>
+            <div class="article-item">
+                > <a href="/base/学习笔记/Kotlin速成.html">Kotlin速成.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper folder-top-wrapper">
+                <div class="folder-name"> 旧文档，待整理</div>
+            <div class="folder-wrapper ">
+                <div class="folder-name">> draft</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/draft/android-open-browser.html">android-open-browser.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/draft/doc-white-configration.html">doc-white-configration.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/draft/linux-note.html">linux-note.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/draft/rxjava-learn.html">rxjava-learn.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/draft/useful-software.html">useful-software.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper ">
+                <div class="folder-name">> hencoder课堂笔记</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/02_HTTP基础.html">02 HTTP基础.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/03_编码加密等.html">03 编码加密等.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/04_登录和授权.html">04 登录和授权.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/05_TCP_IP协议族.html">05 TCP IP协议族.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/06_HTTPS.html">06 HTTPS.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/07_08_Kotlin速成.html">07 08 Kotlin速成.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/09_Retrofit源码.html">09 Retrofit源码.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/10_Okhttp源码.html">10 Okhttp源码.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/11_自定义View绘制.html">11 自定义View绘制.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/18_自定义View布局.html">18 自定义View布局.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/22_触摸反馈原理.html">22 触摸反馈原理.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/30_多线程和线程同步.html">30 多线程和线程同步.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/32_Android多线程机制.html">32 Android多线程机制.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/33_RxJava源码.html">33 RxJava源码.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/55_HashMap源码解析.html">55 HashMap源码解析.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/ConstraintLayout约束布局.html">ConstraintLayout约束布局.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/Java_IO.html">Java IO.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/泛型.html">泛型.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper ">
+                <div class="folder-name">> 其他学习笔记</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/其他学习笔记/C语言速成.html">C语言速成.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/其他学习笔记/hencoder自定义View免费课.html">hencoder自定义View免费课.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper ">
+                <div class="folder-name">> 小程序笔记</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/小程序笔记/note-typescript.html">note-typescript.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/小程序笔记/note-小程序.html">note-小程序.md</a>
+            </div>
+            </div>
+
+            <div class="article-item">
+                > <a href="/base/旧文档，待整理/要学习的东西.html">要学习的东西.md</a>
+            </div>
+            <div class="folder-wrapper ">
+                <div class="folder-name">> 读书笔记</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/读书笔记/《Java核心技术卷Ⅰ》笔记.html">《Java核心技术卷Ⅰ》笔记.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/读书笔记/《图解HTTP》笔记.html">《图解HTTP》笔记.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/读书笔记/《数据结构》笔记.html">《数据结构》笔记.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/读书笔记/《第一行代码》笔记.html">《第一行代码》笔记.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/读书笔记/《计算机网络》笔记.html">《计算机网络》笔记.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper ">
+                <div class="folder-name">> 面试题</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/1_简历.html">1 简历.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/2_Android面试题.html">2 Android面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/3_Java面试题.html">3 Java面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/4_算法题记录.html">4 算法题记录.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/5_网络面试题.html">5 网络面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/6_数据结构.html">6 数据结构.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/7_操作系统面试题.html">7 操作系统面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/8_设计模式.html">8 设计模式.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/9_不属于技术的面试题.html">9 不属于技术的面试题.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper ">
+                <div class="folder-name">> 面试题汇总</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/1_简历.html">1 简历.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/10_面试记录.html">10 面试记录.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/2_Android面试题.html">2 Android面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/3_Java面试题.html">3 Java面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/4_算法题记录.html">4 算法题记录.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/5_网络面试题.html">5 网络面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/6_数据结构.html">6 数据结构.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/7_操作系统面试题.html">7 操作系统面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/8_设计模式.html">8 设计模式.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/9_不属于技术的面试题.html">9 不属于技术的面试题.md</a>
+            </div>
+            </div>
+
+            </div>
+
+        </div>
+    </aside>
+
+    <article class="rightArea flex-center">
+        <div class="article-wrapper">
+            <h1>Java</h1>
+<h2>面向对象的三大特性</h2>
+<ul>
+<li>封装：隐藏内部实现，保证独立性</li>
+<li>继承：使用已有的类来构建新的类</li>
+<li>多态：指的是引用变量所指的具体类型要在程序运行时才确定</li>
+</ul>
+<h2>equals和==的区别</h2>
+<ul>
+<li>== 若是基本数据类型，比较的是值，若是引用数据类型，比较的是内存地址</li>
+<li>equals比较内存地址</li>
+</ul>
+<h2>8大基本数据类型</h2>
+<table>
+<thead>
+<tr>
+<th>基本类型</th>
+<th>位数</th>
+<th>字节</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>int</code></td>
+<td>32</td>
+<td>4</td>
+<td>0</td>
+</tr>
+<tr>
+<td><code>short</code></td>
+<td>16</td>
+<td>2</td>
+<td>0</td>
+</tr>
+<tr>
+<td><code>long</code></td>
+<td>64</td>
+<td>8</td>
+<td>0L</td>
+</tr>
+<tr>
+<td><code>byte</code></td>
+<td>8</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td><code>char</code></td>
+<td>16</td>
+<td>2</td>
+<td>'u0000'</td>
+</tr>
+<tr>
+<td><code>float</code></td>
+<td>32</td>
+<td>4</td>
+<td>0f</td>
+</tr>
+<tr>
+<td><code>double</code></td>
+<td>64</td>
+<td>8</td>
+<td>0d</td>
+</tr>
+<tr>
+<td><code>boolean</code></td>
+<td>1</td>
+<td></td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+<h2>String，StringBuilder和StringBuffer的区别</h2>
+<ul>
+<li>String是字符串常量 不适用于经常要改变值得情况，每次改变相当于生成一个新的对象</li>
+<li>StringBuilder是<strong>线程不安全</strong>的</li>
+<li>StringBuffer是<strong>线程安全</strong>的</li>
+</ul>
+<h2>类和对象的区别</h2>
+<ul>
+<li>类：构造对象的模板或蓝图</li>
+<li>对象：类的实例化</li>
+</ul>
+<h2>重载和重写的区别</h2>
+<ul>
+<li>重载：多个方法，有相同的名字，不同的参数</li>
+<li>重写：<strong>子类重写父类的方法</strong></li>
+</ul>
+<h2>抽象类和接口的区别</h2>
+<ul>
+<li>抽象类：<strong>可以有具体方法实现</strong></li>
+<li>接口：不能有具体的方法实现，一个类只能有一个超类，但可以实现多个接口</li>
+</ul>
+<h2>调用构造器后发生了什么</h2>
+<ol>
+<li>如果第一行调用了另一个构造器（使用<code>this(...)</code>，另外，在构造器中调用另一个构造器这个语句也只能写在<strong>第一行</strong>），则执行另一个构造器</li>
+<li>否则则先后执行：
+<ol>
+<li>静态字段</li>
+<li>静态的初始化块</li>
+<li><strong>所有实例字段初始化为默认值</strong>（0，false，null）</li>
+<li><strong>初始化块</strong></li>
+</ol>
+</li>
+<li>最后才是执行构造器主体代码</li>
+</ol>
+<h2>4种访问修饰符</h2>
+<ul>
+<li><code>private</code>：仅对本类可见</li>
+<li><code>public</code>：对外部完全可见</li>
+<li><code>protected</code>：对本包及所有子类可见</li>
+<li><code>默认（无需修饰符）</code>：对本包可见</li>
+</ul>
+<h2>线程的状态</h2>
+<ul>
+<li><code>New</code>：新建</li>
+<li><code>Runnable</code>：可运行（可能正在运行也可能没有运行）</li>
+<li><code>Blocked</code>：阻塞</li>
+<li><code>Waiting</code>：等待</li>
+<li><code>Timed waiting</code>：计时等待</li>
+<li><code>Terminated</code>：终止</li>
+</ul>
+<h2>final，finally，finalize的区别</h2>
+<ul>
+<li>final：关键字，当一个类被final修饰，表示不可继承，当一个<strong>变量或者方法</strong>被final修饰，表示<strong>在使用中不可改变</strong></li>
+<li>finally：try catch的补充，必要的一步</li>
+<li>finalize：一个方法，finalize()方法是在<strong>垃圾收集器删除对象之前对这个对象调用的方法</strong>。</li>
+</ul>
+<h2>对于HashMap的理解</h2>
+<p>待补充</p>
+<h2>保证线程安全的机制</h2>
+<p>线程安全问题的本质：<strong>在某一个线程对资源进行写操作的中途其他线程对这个资源又进行了写操作，导致出现了数据错误</strong></p>
+<ul>
+<li><strong>synchronized关键字</strong>：保证同步性，可以修饰方法，也可以修饰代码块，本质是保证方法或者代码块内部的资源，在同一时间，最多只能有一个线程在访问，以及资源的数据同步</li>
+<li><strong>volatile关键字</strong>：积极的去维护同步，一般用多个线程去操作同一个变量的时候会用到（<strong>volatile只对基本类型的赋值操作和对象的引用赋值操作有效</strong>）</li>
+<li><strong>AtomicInteger等关键字</strong>：给<strong>变量加上原子性和同步性</strong></li>
+</ul>
+<h2>Java中有哪些引用类型</h2>
+<ul>
+<li>强引用：就是平常new的一个对象，<strong>不会被回收</strong>，只有当=null时才可能会被回收</li>
+<li>软引用：<strong>内存不足了，会回收</strong>，主要垃圾回收期没有回收，该对象就可以一直被程序使用</li>
+<li>弱引用：生命周期比软引用更短，<strong>在垃圾收集器线程扫描到的时候，都会进行回收</strong></li>
+<li>虚引用：如果一个对象仅是虚引用，那么他就和<strong>没有任何引用一样，在任何时候都可能被回收</strong>，虚引用必须和引用队列联合使用。</li>
+</ul>
+<h2>垃圾回收机制</h2>
+<p>待补充</p>
+<h2>大概说一下泛型</h2>
+<p>泛型是一种把明确类型的工作推迟到<strong>创建对象或者调用方法</strong>的时候才去明确的特殊的类型。</p>
+<h2>大概说一下反射机制</h2>
+<p>通过反射可以获取任意一个类的所有属性和方法，还可以调用这些方法和属性</p>
+
+        </div>
+    </article>
+</main>
+</body>
+</html>
+

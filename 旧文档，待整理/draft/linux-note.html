@@ -1,0 +1,743 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        :root {
+            --left-with: 300px;
+            --color-bg: #1E1F22;
+            --color-theme-main: antiquewhite;
+            --color-text-main: #A9A9B3;
+            --color-text-secondary: #333437;
+            --color-embellish: #26282E;
+
+            --font-main: 'Noto Serif SC', serif;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 滚动条 */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--color-text-secondary);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--color-text-secondary);
+        }
+
+
+        body {
+            background-color: var(--color-bg);
+            color: var(--color-text-main);
+            font-family: var(--font-main);
+        }
+
+        body a {
+            color: var(--color-text-main);
+            text-decoration: none;
+        }
+        body a:hover{
+            color: var(--color-theme-main);
+        }
+
+        .leftArea {
+            font-size: .9rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: var(--left-with);
+            height: 100%;
+            overflow: auto;
+            background: var(--color-embellish);
+        }
+
+        .rightArea {
+            font-size: 1.1rem;
+            margin-left: var(--left-with);
+            padding: 30px;
+        }
+
+        .article-wrapper img {
+            max-width: 100%;
+        }
+
+        .folder-top-wrapper {
+            margin-top: 12px;
+        }
+
+        .folder-name {
+            font-weight: 900;
+            font-size: 1rem;
+            color: antiquewhite;
+        }
+        .article-item{
+            margin: 2px 0;
+        }
+    </style>
+    <title>linux-note.md</title>
+</head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300;400;700;900&family=Roboto+Mono&display=swap"
+      rel="stylesheet">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<body>
+<main>
+    <aside class="leftArea">
+        <div style="padding: 30px">
+            <div class="article-item">
+                 <a href="/base/index.html">index.html</a>
+            </div>
+            <div class="folder-wrapper folder-top-wrapper">
+                <div class="folder-name"> 学习笔记</div>
+            <div class="article-item">
+                > <a href="/base/学习笔记/Android-Camp-2023.html">Android-Camp-2023.md</a>
+            </div>
+            <div class="article-item">
+                > <a href="/base/学习笔记/FreeMarker笔记.html">FreeMarker笔记.md</a>
+            </div>
+            <div class="article-item">
+                > <a href="/base/学习笔记/Java注解.html">Java注解.md</a>
+            </div>
+            <div class="article-item">
+                > <a href="/base/学习笔记/Kotlin速成.html">Kotlin速成.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper folder-top-wrapper">
+                <div class="folder-name"> 旧文档，待整理</div>
+            <div class="folder-wrapper ">
+                <div class="folder-name">> draft</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/draft/android-open-browser.html">android-open-browser.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/draft/doc-white-configration.html">doc-white-configration.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/draft/linux-note.html">linux-note.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/draft/rxjava-learn.html">rxjava-learn.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/draft/useful-software.html">useful-software.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper ">
+                <div class="folder-name">> hencoder课堂笔记</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/02_HTTP基础.html">02 HTTP基础.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/03_编码加密等.html">03 编码加密等.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/04_登录和授权.html">04 登录和授权.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/05_TCP_IP协议族.html">05 TCP IP协议族.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/06_HTTPS.html">06 HTTPS.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/07_08_Kotlin速成.html">07 08 Kotlin速成.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/09_Retrofit源码.html">09 Retrofit源码.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/10_Okhttp源码.html">10 Okhttp源码.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/11_自定义View绘制.html">11 自定义View绘制.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/18_自定义View布局.html">18 自定义View布局.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/22_触摸反馈原理.html">22 触摸反馈原理.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/30_多线程和线程同步.html">30 多线程和线程同步.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/32_Android多线程机制.html">32 Android多线程机制.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/33_RxJava源码.html">33 RxJava源码.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/55_HashMap源码解析.html">55 HashMap源码解析.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/ConstraintLayout约束布局.html">ConstraintLayout约束布局.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/Java_IO.html">Java IO.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/泛型.html">泛型.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper ">
+                <div class="folder-name">> 其他学习笔记</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/其他学习笔记/C语言速成.html">C语言速成.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/其他学习笔记/hencoder自定义View免费课.html">hencoder自定义View免费课.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper ">
+                <div class="folder-name">> 小程序笔记</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/小程序笔记/note-typescript.html">note-typescript.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/小程序笔记/note-小程序.html">note-小程序.md</a>
+            </div>
+            </div>
+
+            <div class="article-item">
+                > <a href="/base/旧文档，待整理/要学习的东西.html">要学习的东西.md</a>
+            </div>
+            <div class="folder-wrapper ">
+                <div class="folder-name">> 读书笔记</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/读书笔记/《Java核心技术卷Ⅰ》笔记.html">《Java核心技术卷Ⅰ》笔记.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/读书笔记/《图解HTTP》笔记.html">《图解HTTP》笔记.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/读书笔记/《数据结构》笔记.html">《数据结构》笔记.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/读书笔记/《第一行代码》笔记.html">《第一行代码》笔记.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/读书笔记/《计算机网络》笔记.html">《计算机网络》笔记.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper ">
+                <div class="folder-name">> 面试题</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/1_简历.html">1 简历.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/2_Android面试题.html">2 Android面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/3_Java面试题.html">3 Java面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/4_算法题记录.html">4 算法题记录.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/5_网络面试题.html">5 网络面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/6_数据结构.html">6 数据结构.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/7_操作系统面试题.html">7 操作系统面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/8_设计模式.html">8 设计模式.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/9_不属于技术的面试题.html">9 不属于技术的面试题.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper ">
+                <div class="folder-name">> 面试题汇总</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/1_简历.html">1 简历.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/10_面试记录.html">10 面试记录.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/2_Android面试题.html">2 Android面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/3_Java面试题.html">3 Java面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/4_算法题记录.html">4 算法题记录.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/5_网络面试题.html">5 网络面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/6_数据结构.html">6 数据结构.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/7_操作系统面试题.html">7 操作系统面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/8_设计模式.html">8 设计模式.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/9_不属于技术的面试题.html">9 不属于技术的面试题.md</a>
+            </div>
+            </div>
+
+            </div>
+
+        </div>
+    </aside>
+
+    <article class="rightArea flex-center">
+        <div class="article-wrapper">
+            <hr />
+<h2>title: &quot;Linux笔记&quot;
+date: 2021-04-10T18:23:55+08:00</h2>
+<h2>第 1 讲 入门</h2>
+<p>Linux是一个<strong>开源的</strong>操作系统<strong>内核</strong>，以Linux作为内核的发行版有：Debian、Ubuntu、CentOS、OpenSUSE、Arch、Deepin、Mint等</p>
+<p>Linux默认使用Ext4文件系统格式</p>
+<p>Linux上，文件名称<strong>区分大小写</strong>，Windows上不区分</p>
+<p>在Linux上，<code>.</code>开头的<strong>文件</strong>是<strong>隐藏文件</strong></p>
+<h2>第 2 讲 目录结构和shell基础</h2>
+<p>Linux使用 <code>/</code> 表示根目录，而且所有的目录都至少包含两个子目录： <code>.</code> 和 <code>..</code></p>
+<p><code>.</code> 表示当前目录；<code>..</code> 表示上一层目录。（<code>/</code>的<code>..</code>指向自己）</p>
+<p><code>~</code>表示用户主目录</p>
+<p>开头带<code>/</code>的表示<strong>绝对路径</strong>，开头不带<code>/</code>的表示<strong>相对路径</strong></p>
+<h3>目录说明</h3>
+<table>
+<thead>
+<tr>
+<th>目录</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/</code></td>
+<td>系统根目录</td>
+</tr>
+<tr>
+<td><code>/usr</code></td>
+<td>用户的程序，配置等信息</td>
+</tr>
+<tr>
+<td><code>/home</code></td>
+<td>默认创建用户会在此创建</td>
+</tr>
+<tr>
+<td><code>/etc</code></td>
+<td>存放系统配置文件</td>
+</tr>
+<tr>
+<td><code>/bin</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>/sbin</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>/root</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>/boot</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>/lib</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>/dev</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>/media</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>/proc</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>/var</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>/sys</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>/lost+found</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>/tmp</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>/usr/bin</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>/usr/sbin</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3>终端和shell</h3>
+<p>终端是是计算机最外围设备。用于获取用户输入，并显示程序的输出结果。</p>
+<p>shell是指运行命令的程序， Ubuntu 默认使用 bash 作为默认的 shell 。</p>
+<hr />
+<p>命令的分类</p>
+<ul>
+<li><strong>内建命令</strong>：是shell本身的一部分</li>
+<li><strong>外部命令</strong>：独立的程序文件</li>
+</ul>
+<p>一些具有辅助效果的命令</p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>man</code></td>
+<td><code>man [命令]</code>查看外部命令的帮助手册，<code>man -k [字段]</code>查看哪些文档里包含这个字段</td>
+</tr>
+<tr>
+<td><code>help</code></td>
+<td><code>help [命令]</code>或<code>[命令] --help</code>查看内建命令的帮助手册</td>
+</tr>
+<tr>
+<td><code>type</code></td>
+<td><code>type [命令]</code>查看命令是哪种类型的</td>
+</tr>
+<tr>
+<td><code>whereis/which</code></td>
+<td><code>whereis/which [命令]</code>查看命令是在那个目录</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>两个常用命令</p>
+<h3>cd</h3>
+<p>change directory的缩写，用于切换工作目录</p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cd</code></td>
+<td>切换到用户主目录</td>
+</tr>
+<tr>
+<td><code>cd -</code></td>
+<td>切换到上一个工作目录，常用于在两个目录之间来回切换</td>
+</tr>
+<tr>
+<td><code>cd [目录名]</code></td>
+<td>切换到指定目录，前面带<code>/</code>表示绝对路径，否则就是相对路径</td>
+</tr>
+<tr>
+<td><code>cd~username</code></td>
+<td>将工作目录改变为username的主目录</td>
+</tr>
+</tbody>
+</table>
+<h3>ls</h3>
+<p>list的缩写，用于列出文件</p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ls -a</code></td>
+<td>显示所有文件，包括隐藏文件，常用</td>
+</tr>
+<tr>
+<td><code>ls -sh</code></td>
+<td>以易读的方式显示文件大小，常用</td>
+</tr>
+<tr>
+<td><code>ls -l</code></td>
+<td>显示详细信息，包括权限、所有者、创建时间、名称···</td>
+</tr>
+<tr>
+<td><code>ls -R</code></td>
+<td>递归显示目录</td>
+</tr>
+<tr>
+<td><code>ls -S</code></td>
+<td>按文件大小排序显示，大文件在前</td>
+</tr>
+<tr>
+<td><code>ls -t</code></td>
+<td>以创建时间排序显示，最近创建的在前面</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>shell常用命令</h3>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>mkdir</code></td>
+<td>创建目录</td>
+</tr>
+<tr>
+<td><code>rmdir</code></td>
+<td>删除空目录</td>
+</tr>
+<tr>
+<td><code>touch</code></td>
+<td><strong>创建空文件</strong></td>
+</tr>
+<tr>
+<td><code>cat</code></td>
+<td>显示文件内容</td>
+</tr>
+<tr>
+<td><code>cp</code></td>
+<td>复制文件/目录</td>
+</tr>
+<tr>
+<td><code>rm</code></td>
+<td>删除文件/目录</td>
+</tr>
+<tr>
+<td><code>echo</code></td>
+<td>输出字符串</td>
+</tr>
+<tr>
+<td><code>mv</code></td>
+<td>移动文件/目录</td>
+</tr>
+<tr>
+<td><code>ln</code></td>
+<td>创建连接</td>
+</tr>
+</tbody>
+</table>
+<h2>第 3 讲 用户管理</h2>
+<p>在Linux中 root用户是超级用户，具有最高级别的权限，软件的安装啊，卸载啊，文件的编辑保存啊都要用最高权限去执行</p>
+<p>其他用户可以临时获取root权限，也可直接切换到root用户</p>
+<h3>sudo</h3>
+<p>supper user do的缩写，<strong>临时获取root权限</strong></p>
+<p>可用sudo passwd root指令来设置root的密码</p>
+<p>sudo -i 快速切换到root用户</p>
+<p>sudo -u指定一个用户来运行命令</p>
+<h3>su</h3>
+<p>switch user的缩写，不指定的话默认切换到root用户</p>
+<h3>创建普通用户</h3>
+<p>sudo adduser myuser</p>
+<p>创建用户的同时回创建一个同名用户组</p>
+<p>这些普通用户默认不能获取sudo权限</p>
+<p>创建普通用户并加入已有的组：sudo adduser myuser --ingroup mygroup</p>
+<h3>创建用户组</h3>
+<p>sudo addgroup mygroup</p>
+<h3>赋予普通用户sudo权限的方法</h3>
+<p>方法一，直接修改/etc/group下sudo的信息</p>
+<p>方法二，利用sudo usermod -G mygroup -a myuser指令</p>
+<h3>删除用户和组</h3>
+<p>删除用户-sudo deluser myuser，这时候这个用户的主目录还在</p>
+<p>删除用户并删除主目录-sudo deluser --remove-home myuser</p>
+<p>删除组-sudo delgroup mygroup</p>
+<h2>第 4 讲 文件权限</h2>
+<p>一切皆文件</p>
+<h3>文件类型</h3>
+<p>使用ls -l即可查看类型，其中用10个字符表现类型和权限</p>
+<p>第一个字符表示类型</p>
+<table>
+<thead>
+<tr>
+<th>字符</th>
+<th>类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-</code></td>
+<td>普通文件</td>
+</tr>
+<tr>
+<td><code>d</code></td>
+<td>目录</td>
+</tr>
+<tr>
+<td><code>c</code></td>
+<td>字符设备</td>
+</tr>
+<tr>
+<td><code>b</code></td>
+<td>块设备</td>
+</tr>
+<tr>
+<td><code>p</code></td>
+<td>管道</td>
+</tr>
+<tr>
+<td><code>s</code></td>
+<td>套接字文件</td>
+</tr>
+<tr>
+<td><code>l</code></td>
+<td>符号链接（软链接）</td>
+</tr>
+</tbody>
+</table>
+<p>后9个字符表示权限，3个一组（都是以rwx一组出现的，如没有某个权限，将用<code>-</code>替代），分别表示文件<strong>所属用户</strong>，<strong>用户组</strong>，<strong>其他用户对应的权限</strong></p>
+<table>
+<thead>
+<tr>
+<th>字符</th>
+<th>类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>r</code></td>
+<td>可读，100</td>
+</tr>
+<tr>
+<td><code>w</code></td>
+<td>可写，010</td>
+</tr>
+<tr>
+<td><code>x</code></td>
+<td>可执行，001，如果一个目录没有可执行权限则无法访问</td>
+</tr>
+</tbody>
+</table>
+<h3>chmod</h3>
+<p>change mod的缩写，用于设置文件权限</p>
+<p>chmod +x 可执行权限</p>
+<p>chmod -x去掉可执行权限</p>
+<h3>chown</h3>
+<p>change owner的缩写，用于修改文件所属用户和组</p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>chown myuser:myuser myfile</code></td>
+<td>更改文件myfile所属用户和组为myuser</td>
+</tr>
+<tr>
+<td><code>chown :mygroup myfile</code></td>
+<td>更改文件myfile所属用户组为mygroup</td>
+</tr>
+<tr>
+<td><code>chown myuser: myfile</code></td>
+<td>更改文件myfile所属用户为myuser</td>
+</tr>
+<tr>
+<td><code>chown myuser:myuser myfile/ -R</code></td>
+<td>目录myfile中所有文件所属用户和用户组改为myuser</td>
+</tr>
+</tbody>
+</table>
+<h2>第 5 讲 软件的卸载与安装</h2>
+<h3>dpkg</h3>
+<p>dpkg不会联网查询软件包信息，只能在本地管理软件包</p>
+<p>解压：sudo dpkg -x [软件包]</p>
+<p>安装：sudo dpkg -i [软件包]</p>
+<p>移除软件包：sudo dpkg --remove [软件包]</p>
+<h3>apt</h3>
+<p>可以从软件源安装软甲，卸载软件，以及获取软件更新信息，升级软件等等</p>
+<p>获取更新：sudo apt update</p>
+<p>查看更新列表：sudo apt list --upgradable</p>
+<p>升级：sudo apt upgrade</p>
+<p>移除软件包：sudo apt remove [软件包名称]</p>
+<p>安装：sudo apt install [软件名] （如果之前安装过的话会升级到最新版）</p>
+<p>卸载 sudo apt pu</p>
+<h2>第 6 讲 编辑文件</h2>
+<h3>nano</h3>
+<blockquote>
+<p>可修改配置文件/ect/nanorc以自定义nano编辑器</p>
+</blockquote>
+<p>打开：nano [文件]</p>
+<p>保存：ctrl + s</p>
+<p>退出：ctrl + x</p>
+<h3>vim</h3>
+<p>分为3种模式。</p>
+<ul>
+<li>命令模式</li>
+<li>输入模式（i 是在当前位置输入， a 会把光标向右移动一个， o 是在下一行输入。）</li>
+<li>底行模式（输入冒号<code>:</code>后选择输入命令）</li>
+</ul>
+<p>按i进入编辑模式</p>
+<p>退出 按<code>esc</code>后输入冒号<code>:q</code></p>
+<p><code>:w</code>是保存</p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cd</code></td>
+<td>切换到用户主目录</td>
+</tr>
+<tr>
+<td><code>cd -</code></td>
+<td>切换到上一个工作目录，常用于在两个目录之间来回切换</td>
+</tr>
+<tr>
+<td><code>cd [目录名]</code></td>
+<td>切换到指定目录，前面带<code>/</code>表示绝对路径，否则就是相对路径</td>
+</tr>
+<tr>
+<td><code>cd~username</code></td>
+<td>将工作目录改变为username的主目录</td>
+</tr>
+</tbody>
+</table>
+<p>Linux中，文件名和命令是区分大小写的</p>
+
+        </div>
+    </article>
+</main>
+</body>
+</html>
+

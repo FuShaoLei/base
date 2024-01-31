@@ -1,0 +1,636 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        :root {
+            --left-with: 300px;
+            --color-bg: #1E1F22;
+            --color-theme-main: antiquewhite;
+            --color-text-main: #A9A9B3;
+            --color-text-secondary: #333437;
+            --color-embellish: #26282E;
+
+            --font-main: 'Noto Serif SC', serif;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 滚动条 */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--color-text-secondary);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--color-text-secondary);
+        }
+
+
+        body {
+            background-color: var(--color-bg);
+            color: var(--color-text-main);
+            font-family: var(--font-main);
+        }
+
+        body a {
+            color: var(--color-text-main);
+            text-decoration: none;
+        }
+        body a:hover{
+            color: var(--color-theme-main);
+        }
+
+        .leftArea {
+            font-size: .9rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: var(--left-with);
+            height: 100%;
+            overflow: auto;
+            background: var(--color-embellish);
+        }
+
+        .rightArea {
+            font-size: 1.1rem;
+            margin-left: var(--left-with);
+            padding: 30px;
+        }
+
+        .article-wrapper img {
+            max-width: 100%;
+        }
+
+        .folder-top-wrapper {
+            margin-top: 12px;
+        }
+
+        .folder-name {
+            font-weight: 900;
+            font-size: 1rem;
+            color: antiquewhite;
+        }
+        .article-item{
+            margin: 2px 0;
+        }
+    </style>
+    <title>2 Android面试题.md</title>
+</head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300;400;700;900&family=Roboto+Mono&display=swap"
+      rel="stylesheet">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<body>
+<main>
+    <aside class="leftArea">
+        <div style="padding: 30px">
+            <div class="article-item">
+                 <a href="/base/index.html">index.html</a>
+            </div>
+            <div class="folder-wrapper folder-top-wrapper">
+                <div class="folder-name"> 学习笔记</div>
+            <div class="article-item">
+                > <a href="/base/学习笔记/Android-Camp-2023.html">Android-Camp-2023.md</a>
+            </div>
+            <div class="article-item">
+                > <a href="/base/学习笔记/FreeMarker笔记.html">FreeMarker笔记.md</a>
+            </div>
+            <div class="article-item">
+                > <a href="/base/学习笔记/Java注解.html">Java注解.md</a>
+            </div>
+            <div class="article-item">
+                > <a href="/base/学习笔记/Kotlin速成.html">Kotlin速成.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper folder-top-wrapper">
+                <div class="folder-name"> 旧文档，待整理</div>
+            <div class="folder-wrapper ">
+                <div class="folder-name">> draft</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/draft/android-open-browser.html">android-open-browser.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/draft/doc-white-configration.html">doc-white-configration.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/draft/linux-note.html">linux-note.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/draft/rxjava-learn.html">rxjava-learn.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/draft/useful-software.html">useful-software.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper ">
+                <div class="folder-name">> hencoder课堂笔记</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/02_HTTP基础.html">02 HTTP基础.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/03_编码加密等.html">03 编码加密等.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/04_登录和授权.html">04 登录和授权.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/05_TCP_IP协议族.html">05 TCP IP协议族.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/06_HTTPS.html">06 HTTPS.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/07_08_Kotlin速成.html">07 08 Kotlin速成.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/09_Retrofit源码.html">09 Retrofit源码.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/10_Okhttp源码.html">10 Okhttp源码.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/11_自定义View绘制.html">11 自定义View绘制.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/18_自定义View布局.html">18 自定义View布局.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/22_触摸反馈原理.html">22 触摸反馈原理.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/30_多线程和线程同步.html">30 多线程和线程同步.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/32_Android多线程机制.html">32 Android多线程机制.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/33_RxJava源码.html">33 RxJava源码.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/55_HashMap源码解析.html">55 HashMap源码解析.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/ConstraintLayout约束布局.html">ConstraintLayout约束布局.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/Java_IO.html">Java IO.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/泛型.html">泛型.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper ">
+                <div class="folder-name">> 其他学习笔记</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/其他学习笔记/C语言速成.html">C语言速成.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/其他学习笔记/hencoder自定义View免费课.html">hencoder自定义View免费课.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper ">
+                <div class="folder-name">> 小程序笔记</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/小程序笔记/note-typescript.html">note-typescript.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/小程序笔记/note-小程序.html">note-小程序.md</a>
+            </div>
+            </div>
+
+            <div class="article-item">
+                > <a href="/base/旧文档，待整理/要学习的东西.html">要学习的东西.md</a>
+            </div>
+            <div class="folder-wrapper ">
+                <div class="folder-name">> 读书笔记</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/读书笔记/《Java核心技术卷Ⅰ》笔记.html">《Java核心技术卷Ⅰ》笔记.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/读书笔记/《图解HTTP》笔记.html">《图解HTTP》笔记.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/读书笔记/《数据结构》笔记.html">《数据结构》笔记.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/读书笔记/《第一行代码》笔记.html">《第一行代码》笔记.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/读书笔记/《计算机网络》笔记.html">《计算机网络》笔记.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper ">
+                <div class="folder-name">> 面试题</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/1_简历.html">1 简历.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/2_Android面试题.html">2 Android面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/3_Java面试题.html">3 Java面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/4_算法题记录.html">4 算法题记录.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/5_网络面试题.html">5 网络面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/6_数据结构.html">6 数据结构.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/7_操作系统面试题.html">7 操作系统面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/8_设计模式.html">8 设计模式.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/9_不属于技术的面试题.html">9 不属于技术的面试题.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper ">
+                <div class="folder-name">> 面试题汇总</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/1_简历.html">1 简历.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/10_面试记录.html">10 面试记录.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/2_Android面试题.html">2 Android面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/3_Java面试题.html">3 Java面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/4_算法题记录.html">4 算法题记录.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/5_网络面试题.html">5 网络面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/6_数据结构.html">6 数据结构.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/7_操作系统面试题.html">7 操作系统面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/8_设计模式.html">8 设计模式.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/9_不属于技术的面试题.html">9 不属于技术的面试题.md</a>
+            </div>
+            </div>
+
+            </div>
+
+        </div>
+    </aside>
+
+    <article class="rightArea flex-center">
+        <div class="article-wrapper">
+            <h1>Android</h1>
+<h2>说说四大组件</h2>
+<ul>
+<li>Activity：一个可与用户交互的单独的页面</li>
+<li>Service：是一个可以在后台执行任务而没有用户界面的组件，但是它无法做耗时操作</li>
+<li>BroadcastReceiver：是一种全局监听器，用来实现系统中不同组件之间的通信</li>
+<li>ContentProvider：内容提供者，主要用于在不同的程序之间实现数据共享的功能</li>
+</ul>
+<h2>Activity的4种启动模式</h2>
+<table>
+<thead>
+<tr>
+<th>模式</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>standard</code></td>
+<td><strong>默认的启动模式</strong>，每次启动同一个activity都会创建一个实例</td>
+</tr>
+<tr>
+<td><code>singleTop</code></td>
+<td><strong>栈顶复用模式</strong>，如果发现要启动的activiy正处于栈顶，就直接使用，而不创建，但是如果不处于栈顶，则还是会创建一个新的实例</td>
+</tr>
+<tr>
+<td><code>singleTask</code></td>
+<td><strong>栈内复用模式</strong>，如果发现要启动的activity在栈内，则直接使用，并且使处于其上的其他activitiy出栈，如果要启动的activity不在则创建</td>
+</tr>
+<tr>
+<td><code>singleInstance</code></td>
+<td>指定为singleInstance模式的activity会启用一个新的返回栈来管理这个activity</td>
+</tr>
+</tbody>
+</table>
+<h2>Activity的生命周期</h2>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onCreate</code></td>
+<td><strong>在activity第一次被创建时调用</strong>，通常在这个方法中完成初始化操作（初始化视图等等）</td>
+</tr>
+<tr>
+<td><code>onStart</code></td>
+<td><strong>在activitiy is becoming visible to the user时调用</strong></td>
+</tr>
+<tr>
+<td><code>onResume</code></td>
+<td><strong>在activity与用户交互时调用</strong>，此时activity位于栈顶</td>
+</tr>
+<tr>
+<td><code>onPause</code></td>
+<td><strong>在启动或恢复另一个activiy时调用</strong></td>
+</tr>
+<tr>
+<td><code>onStop</code></td>
+<td><strong>在activity不可见的时候调用</strong>，只要不可见就会调用，比如手机熄屏的时候，切换到另一个应用的时候，都会调用这个方法</td>
+</tr>
+<tr>
+<td><code>onDestroy</code></td>
+<td><strong>在activity被销毁前调用</strong></td>
+</tr>
+<tr>
+<td><code>onRestart</code></td>
+<td><strong>在activiy重新启动之前调用</strong>，比如由A activity跳转到B activity后，在跳转回来，就会触发A activity的onRestart方法，有一些操作比如横竖屏的转变也会触发到onRestart方法，这时候想保存状态的话可以使用onSaveInstanceState方法</td>
+</tr>
+</tbody>
+</table>
+<h2>Fragment的生命周期</h2>
+<p>fragment附着于activity，因此，fragment的生命周期和activity的生命周期可谓是紧紧相连在一起，fragment里的许多方法都是基于activity的</p>
+<table>
+<thead>
+<tr>
+<th>生命周期</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onAttach</code></td>
+<td><strong>在fragment和activity建立关联时调用</strong></td>
+</tr>
+<tr>
+<td><code>onCreate</code></td>
+<td><strong>在fragment第一次被创建时调用</strong></td>
+</tr>
+<tr>
+<td><code>onCreateView</code></td>
+<td><strong>在fragment创建视图时调用</strong></td>
+</tr>
+<tr>
+<td><code>onActivityCreated</code></td>
+<td><strong>在与fragment关联的activity创建完毕时调用</strong></td>
+</tr>
+<tr>
+<td><code>onStart</code></td>
+<td><strong>在fragment将要展示给用户时调用 (前提是关联的activity的onStart方法已经完成).</strong></td>
+</tr>
+<tr>
+<td><code>onResume</code></td>
+<td>在fragment可以和用户交互时调用(前提是关联的activity的onResume方法已经完成)</td>
+</tr>
+<tr>
+<td><code>onPause</code></td>
+<td>fragment不再与用户交互时调用</td>
+</tr>
+<tr>
+<td><code>onStop</code></td>
+<td>fragment对用户不可见的时候调用</td>
+</tr>
+<tr>
+<td><code>onDestroyView</code></td>
+<td>当与fragment关联的视图被移除时调用</td>
+</tr>
+<tr>
+<td><code>onDestroy</code></td>
+<td>销毁fragment时调用</td>
+</tr>
+<tr>
+<td><code>onDetach</code></td>
+<td>当fragment和activity接触关联时调用</td>
+</tr>
+</tbody>
+</table>
+<h2>Service的生命周期</h2>
+<p>service的生命周期</p>
+<p>service的生命周期可以分为两个种情况，一种是<strong>不绑定直接启动</strong>，一种是<strong>被绑定后启动</strong></p>
+<p><strong>不绑定直接启动的生命周期</strong></p>
+<table>
+<thead>
+<tr>
+<th>生命周期</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onCreate</code></td>
+<td>第一次<strong>创建</strong>service时调用</td>
+</tr>
+<tr>
+<td><code>onStartCommand</code></td>
+<td>每次<strong>启动</strong>service时调用</td>
+</tr>
+<tr>
+<td><code>onDestroy</code></td>
+<td>service销毁时调用</td>
+</tr>
+</tbody>
+</table>
+<p><strong>绑定后启动的生命周期</strong></p>
+<table>
+<thead>
+<tr>
+<th>生命周期</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onCreate</code></td>
+<td>第一次<strong>创建</strong>service时调用，和上面的一样，这里不再赘述</td>
+</tr>
+<tr>
+<td><code>onBind</code></td>
+<td>绑定</td>
+</tr>
+<tr>
+<td><code>onDestroy</code></td>
+<td>service销毁时调用</td>
+</tr>
+</tbody>
+</table>
+<h2>Android数据存储</h2>
+<ul>
+<li>文件存储</li>
+<li>SharePreferences存储</li>
+<li>sqlite数据库存储</li>
+</ul>
+<h2>Handler原理</h2>
+<ul>
+<li>Message：消息，线程之间传递的消息</li>
+<li>Handler：处理者，用于发送和处理消息，消息最终都会传递到handleMessage()方法中处理</li>
+<li>MessageQueue：消息队列，用于存放所有通过Handler发送的消息</li>
+<li>Looper：将MessageQueue里的消息传递给Handler的handleMessage()方法中</li>
+</ul>
+<p>逻辑：Handler通过发送Message到MessageQueue里，Looper又将Message传递给Handler的handleMessage()方法</p>
+<h2>谈谈View的自定义</h2>
+<p>自定义View是因为内置的View满足不了我们的需求，需要针对我们的业务需求去定制我们需要的View</p>
+<p>一般重写两个方法：onMeasure，onDraw</p>
+<h2>View的绘制过程</h2>
+<ol>
+<li>测量 onMeasure：这个方法对于单控件来说，只是测量他自己，但是对于 ViewGroup 来说还要正确的给它的子控件传入期望的测量数值。然后根据所有子控件的大小和 <code>onMeasure</code> 中的参数来设置自己本身的大小。</li>
+<li>布局 onLayout：<strong>对于 ViewGroup 来说，onLayout 方法内部要对子控件进行布局，调用子控件的 layout 函数。</strong></li>
+<li>绘制 onDraw：<code>onDraw()</code> 函数就是来绘制了，一般 ViewGroup 不会实现内部的方法，<strong>子控件才重写 <code>onDraw()</code> 方法。</strong></li>
+</ol>
+<h2>广播的分类</h2>
+<ul>
+<li><strong>标准广播</strong>：异步执行的广播，接收者几乎会在同一时间接受到广播，效率高，但无法被截断</li>
+<li><strong>有序广播</strong>：同步执行的广播，接受者接收到并处理完自己的逻辑之后才会继续传递，可以进行截断</li>
+</ul>
+<h2>Android 6.0之后的版本各有什么特性</h2>
+<table>
+<thead>
+<tr>
+<th>版本</th>
+<th>特性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5.0</td>
+<td>Material Design</td>
+</tr>
+<tr>
+<td>6.0</td>
+<td>应用权限管理，指纹，运行时权限机制（需要动态申请权限）</td>
+</tr>
+<tr>
+<td>7.0</td>
+<td>多窗口模式，支持java 8语言平台</td>
+</tr>
+<tr>
+<td>8.0</td>
+<td>通知，隐式广播限制，开启后台Service限制</td>
+</tr>
+<tr>
+<td>9.0</td>
+<td>刘海屏api支持，限制明文流量的网络请求http</td>
+</tr>
+<tr>
+<td>10.0</td>
+<td>暗黑模式，限制程序访问剪贴板</td>
+</tr>
+</tbody>
+</table>
+<h2>app和app之间的通讯</h2>
+<ul>
+<li>contentProvider</li>
+<li>BroadcastReciver</li>
+<li>bundle</li>
+<li>aidl</li>
+</ul>
+<h2>事件分发机制</h2>
+<p>事件分发机制的本质就是 ，<strong>MotionEvent事件在View之间的传递及处理的过程</strong></p>
+<p>顺序依次是：Activity -&gt; ViewGroup -&gt; View</p>
+<p>其中有三个重要的方法</p>
+<ul>
+<li><strong>dispatchTouchEvent</strong>: 自顶向下传递事件。其返回值受子View的dispatchTouchEvent方法和当前View的onTouchEvent方法影响。</li>
+<li><strong>onInterceptTouchEvent</strong>: 对事件进行拦截。<strong>此方法为ViewGroup独有</strong>。一旦对事件序列中的某事件进行拦截，该序列剩余事件都会交给拦截的ViewGroup处理，并且不会再次调用此方法。</li>
+<li><strong>onTouchEvent</strong>: 消耗某事件，即对某事件进行处理。返回true为要消耗该事件，返回false为不消耗，继续向下传递</li>
+</ul>
+<p>大致过程：</p>
+<ol>
+<li>当一个点击事件发生时最先传递到Activity的dispatchTouchEvent方法中进行处理</li>
+<li>然后在此方法中会调用getWindow().superDispatchTouchEvent()方法，将事件传递给Window的mDecor(DecorView 继承FrameLayout)进行处理</li>
+<li>而mDecor则会通过调用superDispatchTouchEvent方法将事件传给<strong>ViewGroup</strong>进行处理。</li>
+<li>当事件从Activity传递到ViewGroup的dispatchTouchEvent()后，ViewGroup首先会调用<strong>onInterceptTouchEvent()方法判断是否拦截该事件</strong>（默认不拦截，拦截的话需要用户重写），如果不拦截该事件，ViewGroup会通过<strong>for循环遍历它所有的子View，找到当前事件发生的View</strong></li>
+<li>然后调用该子View的dispatchTouchEvent()方法，将事件分发给子View进行处理。</li>
+<li>当事件从ViewGroup传递到了View的dispatchTouchEvent()之后，<strong>最先执行的是View的onTouch()方法</strong>。onTouch()方法是View的OnTouchListener接口中所定义的方法，如果用户为View注册了监听，那么当用户触摸屏幕时便会触发此方法。此方法默认返回false，需要用户重写。</li>
+</ol>
+<h2>说一说你自定义可缩放的imageview的思路</h2>
+<p>待补充</p>
+<h2>Android中有几种动画</h2>
+<ul>
+<li><strong>帧动画</strong>：指通过<strong>指定每一帧的图片和播放时间</strong>，有序的进行播放而形成动画效果。</li>
+<li><strong>补间动画</strong>：指通过指定View的初始状态、变化时间、方式，通过一系列的算法去进行图形变换，从而形成动画效果，主要有Alpha、Scale、Translate、Rotate四种效果。注意：<strong>只是在视图层实现了动画效果，并没有真正改变View的属性</strong>，比如滑动列表，改变标题栏的透明度。 </li>
+<li><strong>属性动画</strong>：在Android3.0的时候才支持，通过<strong>不断的改变View的属性</strong>，不断的重绘而形成动画效果。相比于视图动画，<strong>View的属性是真正改变了</strong>。比如view的旋转，放大，缩小。</li>
+</ul>
+<h2>Kotlin中的标准函数</h2>
+<pre><code class="language-kotlin">// let会将变量传入表达式中，主要作用就是配合?.来进行判空处理
+fun doStudy(name:String?){
+    name?.let {
+        println(&quot;$it is studying&quot;)
+    }
+}
+// with会在lambda表达式中提供第一个参数对象的上下文，并使用lambda表达式中的最后一行作为返回值返回
+val list = listOf(&quot;Apple&quot;, &quot;Banana&quot;, &quot;Orange&quot;)
+var builder = StringBuilder()
+val result = with(builder) {
+    append(&quot;Start&quot;)
+    for (fruit in list) append(&quot;$fruit \n&quot;)
+    append(&quot;finish&quot;)
+    toString()
+}
+println(result)
+// run其实和with很相似
+val list = listOf(&quot;Apple&quot;, &quot;Banana&quot;, &quot;Orange&quot;)
+var builder = StringBuilder()
+val result = builder.run {
+    append(&quot;Start&quot;)
+    for (fruit in list) append(&quot;$fruit \n&quot;)
+    append(&quot;finish&quot;)
+    toString()
+}
+println(result)
+// apply和run很相似，但是无法指定返回值
+val list = listOf(&quot;Apple&quot;, &quot;Banana&quot;, &quot;Orange&quot;)
+var builder = StringBuilder()
+val result = builder.apply {
+    append(&quot;Start&quot;)
+    for (fruit in list) append(&quot;$fruit \n&quot;)
+    append(&quot;finish&quot;)
+}
+println(result.toString())
+</code></pre>
+<h2>说一下MVC，MVP，MVVM</h2>
+<ul>
+<li>MVC：View接受操作后将请求传给Controller，Controller操作Model，然后Model又去通知View进行数据的更新，所有通信都是单向</li>
+<li>MVP：Model和View完全分离，依靠Presenter进行通信</li>
+<li>MVVM：ViewModel 层把 Model 层和 View 层的数据同步自动化了</li>
+</ul>
+<h2>handle在子线程更新UI</h2>
+<p>待补充</p>
+
+        </div>
+    </article>
+</main>
+</body>
+</html>
+

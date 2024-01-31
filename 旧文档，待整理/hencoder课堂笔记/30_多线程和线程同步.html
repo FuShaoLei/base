@@ -1,0 +1,360 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        :root {
+            --left-with: 300px;
+            --color-bg: #1E1F22;
+            --color-theme-main: antiquewhite;
+            --color-text-main: #A9A9B3;
+            --color-text-secondary: #333437;
+            --color-embellish: #26282E;
+
+            --font-main: 'Noto Serif SC', serif;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 滚动条 */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--color-text-secondary);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--color-text-secondary);
+        }
+
+
+        body {
+            background-color: var(--color-bg);
+            color: var(--color-text-main);
+            font-family: var(--font-main);
+        }
+
+        body a {
+            color: var(--color-text-main);
+            text-decoration: none;
+        }
+        body a:hover{
+            color: var(--color-theme-main);
+        }
+
+        .leftArea {
+            font-size: .9rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: var(--left-with);
+            height: 100%;
+            overflow: auto;
+            background: var(--color-embellish);
+        }
+
+        .rightArea {
+            font-size: 1.1rem;
+            margin-left: var(--left-with);
+            padding: 30px;
+        }
+
+        .article-wrapper img {
+            max-width: 100%;
+        }
+
+        .folder-top-wrapper {
+            margin-top: 12px;
+        }
+
+        .folder-name {
+            font-weight: 900;
+            font-size: 1rem;
+            color: antiquewhite;
+        }
+        .article-item{
+            margin: 2px 0;
+        }
+    </style>
+    <title>30 多线程和线程同步.md</title>
+</head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300;400;700;900&family=Roboto+Mono&display=swap"
+      rel="stylesheet">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<body>
+<main>
+    <aside class="leftArea">
+        <div style="padding: 30px">
+            <div class="article-item">
+                 <a href="/base/index.html">index.html</a>
+            </div>
+            <div class="folder-wrapper folder-top-wrapper">
+                <div class="folder-name"> 学习笔记</div>
+            <div class="article-item">
+                > <a href="/base/学习笔记/Android-Camp-2023.html">Android-Camp-2023.md</a>
+            </div>
+            <div class="article-item">
+                > <a href="/base/学习笔记/FreeMarker笔记.html">FreeMarker笔记.md</a>
+            </div>
+            <div class="article-item">
+                > <a href="/base/学习笔记/Java注解.html">Java注解.md</a>
+            </div>
+            <div class="article-item">
+                > <a href="/base/学习笔记/Kotlin速成.html">Kotlin速成.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper folder-top-wrapper">
+                <div class="folder-name"> 旧文档，待整理</div>
+            <div class="folder-wrapper ">
+                <div class="folder-name">> draft</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/draft/android-open-browser.html">android-open-browser.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/draft/doc-white-configration.html">doc-white-configration.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/draft/linux-note.html">linux-note.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/draft/rxjava-learn.html">rxjava-learn.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/draft/useful-software.html">useful-software.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper ">
+                <div class="folder-name">> hencoder课堂笔记</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/02_HTTP基础.html">02 HTTP基础.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/03_编码加密等.html">03 编码加密等.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/04_登录和授权.html">04 登录和授权.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/05_TCP_IP协议族.html">05 TCP IP协议族.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/06_HTTPS.html">06 HTTPS.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/07_08_Kotlin速成.html">07 08 Kotlin速成.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/09_Retrofit源码.html">09 Retrofit源码.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/10_Okhttp源码.html">10 Okhttp源码.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/11_自定义View绘制.html">11 自定义View绘制.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/18_自定义View布局.html">18 自定义View布局.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/22_触摸反馈原理.html">22 触摸反馈原理.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/30_多线程和线程同步.html">30 多线程和线程同步.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/32_Android多线程机制.html">32 Android多线程机制.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/33_RxJava源码.html">33 RxJava源码.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/55_HashMap源码解析.html">55 HashMap源码解析.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/ConstraintLayout约束布局.html">ConstraintLayout约束布局.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/Java_IO.html">Java IO.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/泛型.html">泛型.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper ">
+                <div class="folder-name">> 其他学习笔记</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/其他学习笔记/C语言速成.html">C语言速成.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/其他学习笔记/hencoder自定义View免费课.html">hencoder自定义View免费课.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper ">
+                <div class="folder-name">> 小程序笔记</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/小程序笔记/note-typescript.html">note-typescript.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/小程序笔记/note-小程序.html">note-小程序.md</a>
+            </div>
+            </div>
+
+            <div class="article-item">
+                > <a href="/base/旧文档，待整理/要学习的东西.html">要学习的东西.md</a>
+            </div>
+            <div class="folder-wrapper ">
+                <div class="folder-name">> 读书笔记</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/读书笔记/《Java核心技术卷Ⅰ》笔记.html">《Java核心技术卷Ⅰ》笔记.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/读书笔记/《图解HTTP》笔记.html">《图解HTTP》笔记.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/读书笔记/《数据结构》笔记.html">《数据结构》笔记.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/读书笔记/《第一行代码》笔记.html">《第一行代码》笔记.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/读书笔记/《计算机网络》笔记.html">《计算机网络》笔记.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper ">
+                <div class="folder-name">> 面试题</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/1_简历.html">1 简历.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/2_Android面试题.html">2 Android面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/3_Java面试题.html">3 Java面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/4_算法题记录.html">4 算法题记录.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/5_网络面试题.html">5 网络面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/6_数据结构.html">6 数据结构.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/7_操作系统面试题.html">7 操作系统面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/8_设计模式.html">8 设计模式.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/9_不属于技术的面试题.html">9 不属于技术的面试题.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper ">
+                <div class="folder-name">> 面试题汇总</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/1_简历.html">1 简历.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/10_面试记录.html">10 面试记录.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/2_Android面试题.html">2 Android面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/3_Java面试题.html">3 Java面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/4_算法题记录.html">4 算法题记录.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/5_网络面试题.html">5 网络面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/6_数据结构.html">6 数据结构.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/7_操作系统面试题.html">7 操作系统面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/8_设计模式.html">8 设计模式.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/9_不属于技术的面试题.html">9 不属于技术的面试题.md</a>
+            </div>
+            </div>
+
+            </div>
+
+        </div>
+    </aside>
+
+    <article class="rightArea flex-center">
+        <div class="article-wrapper">
+            <h1>多线程和线程同步</h1>
+<p>进程和线程：</p>
+<ul>
+<li>进程：一个运行中的程序，操作系统中独立运行的区域，进程和进程之间是独立的，数据是不共享的</li>
+<li>线程：线程是运行在进程中的并行的一条线路，线程之间可以共享资源</li>
+</ul>
+<p>简单的线程创建：</p>
+<pre><code class="language-java">// 方法1，重写Thread里的run方法
+Thread thread = new Thread() {
+    @Override
+    public void run() {
+        System.out.println(&quot;Thread started!&quot;);
+    }
+};
+thread.start(); // 启动
+// 方法2，新建一个Runnable类，然后传给Thread启动
+Runnable runnable = new Runnable() {
+    @Override
+    public void run() {
+        System.out.println(&quot;Thread with Runnable started!&quot;);
+    }
+};
+Thread thread = new Thread(runnable);
+thread.start();
+</code></pre>
+<p>线程池：</p>
+<pre><code class="language-java">Executor executor1 = Executors.newCachedThreadPool();// 常用的线程池
+Executor executor2 = Executors.newSingleThreadExecutor();// 单线程的线程池
+Executor executor3 = Executors.newFixedThreadPool(10);// 可以指定线程数量的线程池
+
+// 甚至可以直接自定义
+ExecutorService mExecutor = new ThreadPoolExecutor(5, 100, 5, TimeUnit.MINUTES, new SynchronousQueue&lt;&gt;());
+
+</code></pre>
+<p>Callable和Future：Callable相当于一个有返回值的Runnable，Future可以让你延迟获得</p>
+<p>线程同步：</p>
+<p>volatile关键字：积极的去维护同步，一般用多个线程去操作同一个变量的时候会用到（volatile只对基本类型的赋值操作和对象的引用赋值操作有效）</p>
+<p>synchronized关键字：保证同步性，可以修饰方法，也可以修饰代码块，本质是保证方法或者代码块内部的资源，在同一时间，最多只能有一个线程在访问，以及资源的数据同步</p>
+<p>AtomicInteger等关键字：给<strong>变量加上原子性和同步性</strong></p>
+<blockquote>
+<p>原子性：一个操作，要么完成，要么不完成，不能中断</p>
+</blockquote>
+<p>线程安全问题的本质：在某一个线程对资源进行写操作的中途其他线程对这个资源又进行了写操作，导致出现了数据错误</p>
+<p>锁机制的本质：对共享资源进行访问限制，让同一时间只有一个线程可以访问</p>
+
+        </div>
+    </article>
+</main>
+</body>
+</html>
+

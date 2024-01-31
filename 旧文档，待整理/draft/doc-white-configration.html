@@ -1,0 +1,515 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        :root {
+            --left-with: 300px;
+            --color-bg: #1E1F22;
+            --color-theme-main: antiquewhite;
+            --color-text-main: #A9A9B3;
+            --color-text-secondary: #333437;
+            --color-embellish: #26282E;
+
+            --font-main: 'Noto Serif SC', serif;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 滚动条 */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--color-text-secondary);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--color-text-secondary);
+        }
+
+
+        body {
+            background-color: var(--color-bg);
+            color: var(--color-text-main);
+            font-family: var(--font-main);
+        }
+
+        body a {
+            color: var(--color-text-main);
+            text-decoration: none;
+        }
+        body a:hover{
+            color: var(--color-theme-main);
+        }
+
+        .leftArea {
+            font-size: .9rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: var(--left-with);
+            height: 100%;
+            overflow: auto;
+            background: var(--color-embellish);
+        }
+
+        .rightArea {
+            font-size: 1.1rem;
+            margin-left: var(--left-with);
+            padding: 30px;
+        }
+
+        .article-wrapper img {
+            max-width: 100%;
+        }
+
+        .folder-top-wrapper {
+            margin-top: 12px;
+        }
+
+        .folder-name {
+            font-weight: 900;
+            font-size: 1rem;
+            color: antiquewhite;
+        }
+        .article-item{
+            margin: 2px 0;
+        }
+    </style>
+    <title>doc-white-configration.md</title>
+</head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300;400;700;900&family=Roboto+Mono&display=swap"
+      rel="stylesheet">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<body>
+<main>
+    <aside class="leftArea">
+        <div style="padding: 30px">
+            <div class="article-item">
+                 <a href="/base/index.html">index.html</a>
+            </div>
+            <div class="folder-wrapper folder-top-wrapper">
+                <div class="folder-name"> 学习笔记</div>
+            <div class="article-item">
+                > <a href="/base/学习笔记/Android-Camp-2023.html">Android-Camp-2023.md</a>
+            </div>
+            <div class="article-item">
+                > <a href="/base/学习笔记/FreeMarker笔记.html">FreeMarker笔记.md</a>
+            </div>
+            <div class="article-item">
+                > <a href="/base/学习笔记/Java注解.html">Java注解.md</a>
+            </div>
+            <div class="article-item">
+                > <a href="/base/学习笔记/Kotlin速成.html">Kotlin速成.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper folder-top-wrapper">
+                <div class="folder-name"> 旧文档，待整理</div>
+            <div class="folder-wrapper ">
+                <div class="folder-name">> draft</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/draft/android-open-browser.html">android-open-browser.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/draft/doc-white-configration.html">doc-white-configration.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/draft/linux-note.html">linux-note.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/draft/rxjava-learn.html">rxjava-learn.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/draft/useful-software.html">useful-software.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper ">
+                <div class="folder-name">> hencoder课堂笔记</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/02_HTTP基础.html">02 HTTP基础.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/03_编码加密等.html">03 编码加密等.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/04_登录和授权.html">04 登录和授权.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/05_TCP_IP协议族.html">05 TCP IP协议族.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/06_HTTPS.html">06 HTTPS.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/07_08_Kotlin速成.html">07 08 Kotlin速成.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/09_Retrofit源码.html">09 Retrofit源码.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/10_Okhttp源码.html">10 Okhttp源码.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/11_自定义View绘制.html">11 自定义View绘制.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/18_自定义View布局.html">18 自定义View布局.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/22_触摸反馈原理.html">22 触摸反馈原理.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/30_多线程和线程同步.html">30 多线程和线程同步.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/32_Android多线程机制.html">32 Android多线程机制.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/33_RxJava源码.html">33 RxJava源码.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/55_HashMap源码解析.html">55 HashMap源码解析.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/ConstraintLayout约束布局.html">ConstraintLayout约束布局.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/Java_IO.html">Java IO.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/泛型.html">泛型.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper ">
+                <div class="folder-name">> 其他学习笔记</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/其他学习笔记/C语言速成.html">C语言速成.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/其他学习笔记/hencoder自定义View免费课.html">hencoder自定义View免费课.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper ">
+                <div class="folder-name">> 小程序笔记</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/小程序笔记/note-typescript.html">note-typescript.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/小程序笔记/note-小程序.html">note-小程序.md</a>
+            </div>
+            </div>
+
+            <div class="article-item">
+                > <a href="/base/旧文档，待整理/要学习的东西.html">要学习的东西.md</a>
+            </div>
+            <div class="folder-wrapper ">
+                <div class="folder-name">> 读书笔记</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/读书笔记/《Java核心技术卷Ⅰ》笔记.html">《Java核心技术卷Ⅰ》笔记.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/读书笔记/《图解HTTP》笔记.html">《图解HTTP》笔记.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/读书笔记/《数据结构》笔记.html">《数据结构》笔记.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/读书笔记/《第一行代码》笔记.html">《第一行代码》笔记.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/读书笔记/《计算机网络》笔记.html">《计算机网络》笔记.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper ">
+                <div class="folder-name">> 面试题</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/1_简历.html">1 简历.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/2_Android面试题.html">2 Android面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/3_Java面试题.html">3 Java面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/4_算法题记录.html">4 算法题记录.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/5_网络面试题.html">5 网络面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/6_数据结构.html">6 数据结构.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/7_操作系统面试题.html">7 操作系统面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/8_设计模式.html">8 设计模式.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/9_不属于技术的面试题.html">9 不属于技术的面试题.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper ">
+                <div class="folder-name">> 面试题汇总</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/1_简历.html">1 简历.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/10_面试记录.html">10 面试记录.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/2_Android面试题.html">2 Android面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/3_Java面试题.html">3 Java面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/4_算法题记录.html">4 算法题记录.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/5_网络面试题.html">5 网络面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/6_数据结构.html">6 数据结构.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/7_操作系统面试题.html">7 操作系统面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/8_设计模式.html">8 设计模式.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/9_不属于技术的面试题.html">9 不属于技术的面试题.md</a>
+            </div>
+            </div>
+
+            </div>
+
+        </div>
+    </aside>
+
+    <article class="rightArea flex-center">
+        <div class="article-wrapper">
+            <hr />
+<h2>title: white主题配置
+date: 2020-08-09 23:31:29
+tags: [Hexo]</h2>
+<p><img src="https://cdn.jsdelivr.net/gh/fushaolei/img2/20200726101450.png" alt="" /></p>
+<h2>👋Hi there</h2>
+<p>欢迎使用本主题 ，<strong>White</strong> 是一个在个性和极简之间徘徊的主题，（因为作者本身性格就是这样的人，而且搞不好心态爆炸会删库跑路（现已跑路。。。），还请喜欢的各位及时fork🤣</p>
+<p>如果你喜欢这款主题的话，不妨给我一个star 感激不尽！</p>
+<h2>安装</h2>
+<blockquote>
+<p>方便备份和更新</p>
+</blockquote>
+<ol>
+<li>fork 本项目</li>
+<li><code>git clone https://github.com/&lt;你的用户名&gt;/hexo-theme-white.git themes/white</code></li>
+<li>修改根目录下的<code>_config.yml</code> 为<code>theme: white</code></li>
+</ol>
+<h2>主题配置</h2>
+<blockquote>
+<p>其实config文件里写的很明白了，现在就重新列一下，添加一些不必要的说明</p>
+</blockquote>
+<h3>可自定义style</h3>
+<pre><code class="language-yml">############## style ##############
+style:
+  layout:
+    max-width: 1130px #总体宽度
+    post-max-width: 800px #文章内容宽度
+  color:
+    theme-main: &quot;#1A98FF&quot; # 主色调
+    theme-secondary: &quot;#DDF0FF&quot; # 次色调
+    text-main: &quot;#333333&quot; # 文字主色调
+    text-secondary: &quot;#898FA0&quot; # 文字次色调
+  animation:
+    open: true # 如果开启动画的话会引入animation.css
+</code></pre>
+<h3>主页配置</h3>
+<h4>home页和archive可选配置</h4>
+<pre><code class="language-yml"># home页可选类型
+home:
+  type: &quot;img&quot; # 主页的类型，可选 home | img | simple
+
+# archive页可选类型
+archive:
+  type: &quot;simple&quot; # archive的类型，可选 img | simple
+</code></pre>
+<p>type为home就是一个封面，为img就是图片加标题的形式，simple就是极简模式</p>
+<h3>随机cover</h3>
+<p>当你懒的找封面而又想用img模式的时候，我为你准备了些随机封面</p>
+<pre><code class="language-yml">archive_img_mode:
+  default_cover: #默认的cover
+    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/01.jpg
+    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/02.jpg
+    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/03.jpg
+    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/04.jpg
+    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/05.jpg
+    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/06.jpg
+</code></pre>
+<blockquote>
+<p>图片均来自于bing的每日图片，版权归图片原作者所有，我只是搬到了自己的仓库方便使用，如果有侵犯到你的权益，请和我联系 ( •̀ ω •́ )y</p>
+</blockquote>
+<h3>浏览器标签页配置</h3>
+<pre><code class="language-yml"># icon
+icon:  #标签页图标，这里可填链接
+#  header
+site_name: white.
+</code></pre>
+<h3>menu</h3>
+<pre><code class="language-yml">menu:
+  HOME: /
+  BLOG: /archives
+</code></pre>
+<h3>全局搜索</h3>
+<pre><code class="language-yml">## 本地搜索
+search:
+  open: false # 是否开启
+  page: /search # 页面路径（通常命名为search）
+</code></pre>
+<p>如果你想使用的话，请先到根目录执行</p>
+<pre><code class="language-npm">npm install hexo-generator-search --save
+</code></pre>
+<p>然后新建一个名为search的page</p>
+<pre><code class="language-npm">hexo new page &quot;search&quot;
+</code></pre>
+<p>进入这个文件夹，更改它的<code>index.md</code>文件，示例如下</p>
+<pre><code class="language-md">---
+layout: search
+cover: #你还可以自定义cover
+---
+
+</code></pre>
+<p>然后将open设置为true即可开启</p>
+<h3>自我介绍</h3>
+<blockquote>
+<p>当你的home页有用到type home模式的话 请配置此项</p>
+</blockquote>
+<pre><code class="language-yml"># 自我介绍
+intro:
+  title: Hi.I'm White.
+  sub: 'A [White](https://github.com/FuShaoLei/hexo-theme-white) theme for [Hexo](http://hexo.io/)' # markdown语法
+  avator: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg #头像 暂时还没用到
+  author: white #所有文章的默认作者
+</code></pre>
+<h3>联系方式</h3>
+<pre><code class="language-yml">#联系方式  
+#更多图标：https://remixicon.com/
+contact:
+  Github:
+    - https://github.com/FuShaoLei/hexo-theme-white
+    - ri-github-line
+  Email: 
+    - mailto:1563250958@qq.com
+    - ri-mail-line
+</code></pre>
+<p>格式就是</p>
+<pre><code class="language-yml">名字:
+  - 链接
+  - 图标 
+</code></pre>
+<p>更多图标请到 https://remixicon.com/ 搜寻，感谢此图标项目的开源作者<a href="https://github.com/xiaochunjimmy">xiaochunjimmy</a></p>
+<h3>文章toc设置</h3>
+<pre><code class="language-yml"># 文章toc索引栏设置
+toc:
+  open: true # 是否开启
+  side: true  # 选择toc的位置，填true的话toc将会显示在文章的侧边，填false的话 toc将出现在文章的开头
+  max: 2 #最大深度
+  min: 2 #最小深度
+</code></pre>
+<p>其中side如果设置为false的话，将会出现在文章的top部分，如果设置为true的话，将会出现在侧边
+min设置的是最小深度，max设置的是最大深度，~~如上面配置所示，min为2，说明h2索引是至少要出现的，不会出现h1索引 （ 突然不知道怎么表达，~~ 如果不理解的话建议你试试 😂</p>
+<h3>highlight</h3>
+<p>代码高亮，想要使用代码高亮，得先把根目录的**<code>_config.yml</code>里的highlight的enable置成false**</p>
+<pre><code class="language-yml"># 插件
+plugins:
+  highlightjs:
+    js: https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js
+    css: https://cdn.jsdelivr.net/npm/highlight.js@10.1.1/styles/github.css
+    # more: https://www.jsdelivr.com/package/npm/highlight.js?path=styles
+</code></pre>
+<p><strong>注：</strong>  hexo 5.0版本此处有bug（2020年8月10日写），就是渲染不出来大括号（<code>{</code>和<code>}</code>）</p>
+<p>这里博主有点懒了，最近事多心烦，就等着hexo官方更新吧 QAQ</p>
+<h3>评论系统</h3>
+<pre><code class="language-yml"># 评论系统设置
+comments:
+  open: false #是否开启评论系统
+  system: gitalk #选择评论系统 可选 valine gitalk livere
+  # Valine
+  valine:
+    appid: #Leancloud应用的AppID  这里和下面的要换成你自己的啊QAQ
+    appkey: #Leancloud应用的AppKey
+    verify: false #验证码
+    notify: true #评论回复提醒
+    avatar: robohash #评论列表头像样式：''/mm/identicon/monsterid/wavatar/retro/hide
+    #头像类型可见： https://valine.js.org/avatar.html
+    placeholder: 留下你来过的痕迹~ #评论框占位符
+  # Gitalk
+  gitalk:
+    owner:  #Github 用户名,
+    repo:  #储存评论issue的github仓库名
+    admin:  #Github 用户名
+    clientID:  #`Github Application clientID`
+    clientSecret: #`Github Application clientSecret`
+  #livere
+  livere: # 前往 http://livere.com/ 申请账号
+    dataId: city #免费版本city
+    dataUid: #安装代码中 data-uid 后面数据
+</code></pre>
+<p>这里的话相关教程大家网上搜就好了。这里就不赘诉了</p>
+<blockquote>
+<p>还是写一些gitalk的坑吧，一个是repo这里 写的应该是<strong>仓库名</strong>，而不是仓库链接或者其他的东西，然后gitalk要上线部署一次才可以，md文件名字最好用英文来命名，如果用中文的话，超出50个字符将会初始化失败</p>
+</blockquote>
+<h3>其他</h3>
+<pre><code class="language-yml"># 页脚
+footer: Power by [Hexo](http://hexo.io/) Theme by [White](https://github.com/FuShaoLei/hexo-theme-white) # markdown语法
+
+#有分类时是否开启menu分类页和自定义名字
+menu_categories:
+  open: true
+  name: 分类
+
+#可自定义归档标签页名字 
+archive_tab_name: Blog
+
+#图片懒加载
+lazyload:
+  open: true #是否开启
+</code></pre>
+<p>这里就不bb了 大家应该看的懂</p>
+<h2>进阶使用</h2>
+<h3>平滑升级</h3>
+<h4>配置</h4>
+<p>因为主题的更新比较频繁，所以如果你想舒服用到最新的版本的话，就请使用平滑升级</p>
+<ol>
+<li>在你<strong>根目录</strong>下的<code>source</code>文件夹下新建一个名为<code>_data</code>的<strong>文件夹</strong></li>
+<li>复制<strong>主题文件夹</strong>下的<code>_config.yml</code>到<code>_data</code>文件夹下，重命名为<code>white.yml</code></li>
+</ol>
+<p>好了，到这里差不多完成了，以后你需要改动什么，只需要在这个<code>white.yml</code>中进行修改(在编译时，会自动将此替换<code>_config.yml</code>)</p>
+<h4>升级</h4>
+<p>当你看到我的主题有<a href="https://github.com/FuShaoLei/hexo-theme-white/issues/3">变更</a>时，在主题文件中执行<code>git pull</code>拉取最新代码
+然后，对比最新主题文件夹下的<code>_config.yml</code> 看看有无新增什么东西，添加到你的<code>white.yml</code>中即可</p>
+
+        </div>
+    </article>
+</main>
+</body>
+</html>
+

@@ -1,0 +1,402 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        :root {
+            --left-with: 300px;
+            --color-bg: #1E1F22;
+            --color-theme-main: antiquewhite;
+            --color-text-main: #A9A9B3;
+            --color-text-secondary: #333437;
+            --color-embellish: #26282E;
+
+            --font-main: 'Noto Serif SC', serif;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 滚动条 */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--color-text-secondary);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--color-text-secondary);
+        }
+
+
+        body {
+            background-color: var(--color-bg);
+            color: var(--color-text-main);
+            font-family: var(--font-main);
+        }
+
+        body a {
+            color: var(--color-text-main);
+            text-decoration: none;
+        }
+        body a:hover{
+            color: var(--color-theme-main);
+        }
+
+        .leftArea {
+            font-size: .9rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: var(--left-with);
+            height: 100%;
+            overflow: auto;
+            background: var(--color-embellish);
+        }
+
+        .rightArea {
+            font-size: 1.1rem;
+            margin-left: var(--left-with);
+            padding: 30px;
+        }
+
+        .article-wrapper img {
+            max-width: 100%;
+        }
+
+        .folder-top-wrapper {
+            margin-top: 12px;
+        }
+
+        .folder-name {
+            font-weight: 900;
+            font-size: 1rem;
+            color: antiquewhite;
+        }
+        .article-item{
+            margin: 2px 0;
+        }
+    </style>
+    <title>android-open-browser.md</title>
+</head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300;400;700;900&family=Roboto+Mono&display=swap"
+      rel="stylesheet">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<body>
+<main>
+    <aside class="leftArea">
+        <div style="padding: 30px">
+            <div class="article-item">
+                 <a href="/base/index.html">index.html</a>
+            </div>
+            <div class="folder-wrapper folder-top-wrapper">
+                <div class="folder-name"> 学习笔记</div>
+            <div class="article-item">
+                > <a href="/base/学习笔记/Android-Camp-2023.html">Android-Camp-2023.md</a>
+            </div>
+            <div class="article-item">
+                > <a href="/base/学习笔记/FreeMarker笔记.html">FreeMarker笔记.md</a>
+            </div>
+            <div class="article-item">
+                > <a href="/base/学习笔记/Java注解.html">Java注解.md</a>
+            </div>
+            <div class="article-item">
+                > <a href="/base/学习笔记/Kotlin速成.html">Kotlin速成.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper folder-top-wrapper">
+                <div class="folder-name"> 旧文档，待整理</div>
+            <div class="folder-wrapper ">
+                <div class="folder-name">> draft</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/draft/android-open-browser.html">android-open-browser.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/draft/doc-white-configration.html">doc-white-configration.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/draft/linux-note.html">linux-note.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/draft/rxjava-learn.html">rxjava-learn.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/draft/useful-software.html">useful-software.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper ">
+                <div class="folder-name">> hencoder课堂笔记</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/02_HTTP基础.html">02 HTTP基础.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/03_编码加密等.html">03 编码加密等.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/04_登录和授权.html">04 登录和授权.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/05_TCP_IP协议族.html">05 TCP IP协议族.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/06_HTTPS.html">06 HTTPS.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/07_08_Kotlin速成.html">07 08 Kotlin速成.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/09_Retrofit源码.html">09 Retrofit源码.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/10_Okhttp源码.html">10 Okhttp源码.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/11_自定义View绘制.html">11 自定义View绘制.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/18_自定义View布局.html">18 自定义View布局.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/22_触摸反馈原理.html">22 触摸反馈原理.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/30_多线程和线程同步.html">30 多线程和线程同步.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/32_Android多线程机制.html">32 Android多线程机制.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/33_RxJava源码.html">33 RxJava源码.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/55_HashMap源码解析.html">55 HashMap源码解析.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/ConstraintLayout约束布局.html">ConstraintLayout约束布局.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/Java_IO.html">Java IO.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/hencoder课堂笔记/泛型.html">泛型.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper ">
+                <div class="folder-name">> 其他学习笔记</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/其他学习笔记/C语言速成.html">C语言速成.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/其他学习笔记/hencoder自定义View免费课.html">hencoder自定义View免费课.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper ">
+                <div class="folder-name">> 小程序笔记</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/小程序笔记/note-typescript.html">note-typescript.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/小程序笔记/note-小程序.html">note-小程序.md</a>
+            </div>
+            </div>
+
+            <div class="article-item">
+                > <a href="/base/旧文档，待整理/要学习的东西.html">要学习的东西.md</a>
+            </div>
+            <div class="folder-wrapper ">
+                <div class="folder-name">> 读书笔记</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/读书笔记/《Java核心技术卷Ⅰ》笔记.html">《Java核心技术卷Ⅰ》笔记.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/读书笔记/《图解HTTP》笔记.html">《图解HTTP》笔记.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/读书笔记/《数据结构》笔记.html">《数据结构》笔记.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/读书笔记/《第一行代码》笔记.html">《第一行代码》笔记.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/读书笔记/《计算机网络》笔记.html">《计算机网络》笔记.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper ">
+                <div class="folder-name">> 面试题</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/1_简历.html">1 简历.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/2_Android面试题.html">2 Android面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/3_Java面试题.html">3 Java面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/4_算法题记录.html">4 算法题记录.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/5_网络面试题.html">5 网络面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/6_数据结构.html">6 数据结构.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/7_操作系统面试题.html">7 操作系统面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/8_设计模式.html">8 设计模式.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题/9_不属于技术的面试题.html">9 不属于技术的面试题.md</a>
+            </div>
+            </div>
+
+            <div class="folder-wrapper ">
+                <div class="folder-name">> 面试题汇总</div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/1_简历.html">1 简历.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/10_面试记录.html">10 面试记录.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/2_Android面试题.html">2 Android面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/3_Java面试题.html">3 Java面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/4_算法题记录.html">4 算法题记录.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/5_网络面试题.html">5 网络面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/6_数据结构.html">6 数据结构.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/7_操作系统面试题.html">7 操作系统面试题.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/8_设计模式.html">8 设计模式.md</a>
+            </div>
+            <div class="article-item">
+                >> <a href="/base/旧文档，待整理/面试题汇总/9_不属于技术的面试题.html">9 不属于技术的面试题.md</a>
+            </div>
+            </div>
+
+            </div>
+
+        </div>
+    </aside>
+
+    <article class="rightArea flex-center">
+        <div class="article-wrapper">
+            <hr />
+<h2>title: Android打开浏览器的方式
+date: 2022-07-12
+tags: [学习笔记]</h2>
+<h2>方法一</h2>
+<p>一般的做法</p>
+<pre><code class="language-java">Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parese(&quot;http://github.com/&quot;));
+startActivity(intent);
+</code></pre>
+<p>使用此法时，当只有一个浏览器的时候，那么就会打开这个唯一的浏览器，但有多个浏览器的时候，系统就会调起一个对话框，让用户去选择要使用哪个浏览器，并且是仅此一次，还是总是，如果选择总是的话，那么下一次再用这个方法打开链接的时候，将不会再次询问，而是直接使用这个你选择“总是”的浏览器去打开链接</p>
+<p>优点：可以让用户自己去选择并设置默认的浏览器</p>
+<p>缺点：如果没有设置默认的浏览器，而且也不想设置，那么每次跳转，都要选择浏览器，有点小烦</p>
+<h2>方法二</h2>
+<p>让用户每次都去选择浏览器：</p>
+<pre><code class="language-java">Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(&quot;https://github.com&quot;));
+startActivity(Intent.createChooser(intent,&quot;FuShaoLei&quot;));
+</code></pre>
+<p>使用这个方法，如果你只有一个浏览器或者有默认的浏览器的话，直接打开，否则，每次打开链接，都要用户去选择浏览器，<strong>并且没有什么仅此一次打开或者总是打开的选项</strong>，这种方法还可以自定义标题</p>
+<p>优点：不用每次都去选择仅此一次或者总是的选项，可以自定义标题</p>
+<p>缺点：如果没有默认的，那么每次都要选，更烦了</p>
+<h2>方法三</h2>
+<p>通过指定包名的做法</p>
+<p>比方说我查到了google chrome的包名是com.android.chrome，那么我可以这样做</p>
+<pre><code class="language-java">Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(&quot;https://github.com&quot;));
+intent.setPackage(&quot;com.android.chrome&quot;);
+startActivity(intent);
+</code></pre>
+<p>这样的话，如果有多个浏览器，系统也不会进行询问，而是直接打开链接，但是如果手机内没有指定浏览器的话，就会报错了，比方说我知道opera浏览器的包名是com.opera.browser，但是我的手机里并没有opera浏览器，我直接打开的话，就会：</p>
+<pre><code>android.content.ActivityNotFoundException: No Activity found to handle Intent { act=android.intent.action.VIEW dat=https://github.com/... pkg=com.opera.browser }
+</code></pre>
+<p>那么我们可以通过android提供的一个叫做PackageManager的类去查看，小小的封装了一下：</p>
+<pre><code class="language-java">public static boolean isAppInstalled(@Nullable Context context, @Nullable String originPackageName) {
+    if (context == null || originPackageName == null || originPackageName.length() == 0)
+        return false;
+    boolean isInstalled = false;
+    try {
+        PackageManager packageManager = context.getPackageManager();
+        List&lt;PackageInfo&gt; list = packageManager.getInstalledPackages(0);
+        if (list != null) {
+            for (PackageInfo info : list) {
+                if (originPackageName.equals(info.packageName)) {
+                    isInstalled = true;
+                    break;
+                }
+            }
+        }
+    } catch (Exception e) {
+        Log.e(&quot;=&gt;&quot;, &quot;isAppInstalled &quot; + e.getMessage());
+    }
+    return isInstalled;
+}
+</code></pre>
+<p>记得在androidmanifest文件中加入：</p>
+<pre><code class="language-xml">    &lt;uses-permission
+        android:name=&quot;android.permission.QUERY_ALL_PACKAGES&quot;
+        tools:ignore=&quot;QueryAllPackagesPermission&quot; /&gt;
+</code></pre>
+<p>指定的包名不一定是浏览器，有些情况下，可以进入到指定的app内，比如telegram的包名是org.telegram.messenger，那么我在遇到前缀诸如<code>https://t.me/</code>的链接的时候，便可以通过指定包名，直接使用telegram打开，而不是使用浏览器打开</p>
+<blockquote>
+<p>另外，在我的开发过程中，发现如果是打开facebook的话需要一点别的操作，需要在data前加入：<code>fb://facewebmodal/f?href=</code>，才可以打开facebook</p>
+</blockquote>
+<p>而app的包名的获取，可以把app下载下来后，用一个叫做skit的软件去获取，当然也可以通过adb工具去获取，总之都是要把app下载下来之后才能去获取的，当然可能也有可以直接看包名的网站，可是我没找到QAQ，这里就列一下我找到的一些app包名，仅供参考：</p>
+<pre><code class="language-java">    // app
+    public static String TELEGRAM = &quot;org.telegram.messenger&quot;;
+    public static String TWITTER = &quot;com.twitter.android&quot;;
+    public static String REDDIT = &quot;com.reddit.frontpage&quot;;
+    public static String DISCORD = &quot;com.discord&quot;;
+    public static String FACEBOOK = &quot;com.facebook.katana&quot;;
+    // browser
+    public static String FIREFOX = &quot;org.mozilla.firefox&quot;;
+    public static String UC = &quot;com.UCMobile.intl&quot;;
+    public static String BRAVE = &quot;com.brave.browser&quot;;
+    public static String SAMSUNG = &quot;com.sec.android.app.sbrowser&quot;;
+    public static String DUCKDUCKGO = &quot;com.duckduckgo.mobile.android&quot;;
+    public static String OPERA = &quot;com.opera.browser&quot;;
+    public static String CHROME = &quot;com.android.chrome&quot;;
+</code></pre>
+<p>使用这个方法的优缺点：</p>
+<ul>
+<li>
+<p>优点：直接打开浏览器，而不是让用户去选择，用户体验一流</p>
+</li>
+<li>
+<p>缺点：指定软件的包名可能会变</p>
+</li>
+</ul>
+
+        </div>
+    </article>
+</main>
+</body>
+</html>
+
